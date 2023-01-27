@@ -1,5 +1,3 @@
-import isDate from "date-fns/isDate";
-
 export class ToDo {
 	title: string;
 	description: string;
