@@ -8,15 +8,12 @@ const addToList = () => {
 		"description"
 	) as HTMLInputElement;
 	const dueDate = document.getElementById("dueDate") as HTMLInputElement;
-	const priority = document.getElementById("priority") as HTMLSelectElement;
-	const selectedPriority = priority.options[priority.selectedIndex].value;
 
 	const toDoList = new ToDoList();
 	const toDo = new ToDo(
 		title.value,
 		description.value,
-		dueDate.valueAsDate as Date,
-		selectedPriority
+		dueDate.valueAsDate as Date
 	);
 	toDoList.addToDo(toDo);
 	console.log(toDoList.getToDoList());
