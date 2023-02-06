@@ -4,9 +4,25 @@ body {
 .hidden {
 	display: none;
 }
+.todo-items {
+	display: flex;
+	flex-direction: column;
+}
+.todo {
+	width: 400px;
+	font-size: 2em;
+	padding: 0.5em;
+	border-radius: 5px;
+	background-color: #333;
+	color: white;
+	cursor: pointer;
+	margin-bottom: 0.5em;
+}
 .show-modal {
+	width: 400px;
 	font-size: 2em;
 	padding: 1em 3em;
+	border: none;
 	border-radius: 5px;
 	background-color: #333;
 	color: white;
